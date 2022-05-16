@@ -1,14 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+      <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <title>A Lâmpada</title>
 </head>
+
 <body>
-    <h1>EVENTOS COM JS</h1>
+    <h1 class="titulo">EVENTOS COM JS</h1>
     <main>
         <div>
             <img src="./img/desligada.jpg" alt="Lâmpada" id='lamp' width="300px">
@@ -17,8 +22,73 @@
             <button id='turnOn'>LIGAR</button>
             <button id='turnOff'>DESLIGAR</button>
         </div>
+        <div class="botão">
+            <button id='BuyNew'>COMPRAR NOVA LÂMPADA</button>
+        </div>
     </main>
 
+    <div class="quantaslamp">
+        <button id='quantlpm' class="btn btn-primary">QUANTAS LÂMPADAS <br> EU COMPREI?</button>
+        <p id="resposta"></p>
+
+    </div>
+
+
+    <div class="calculadora">
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#ExemploModalCentralizado" id='somar'>
+            SOMAR          
+        </button>
+        <p id="resposta2"></p>
+
+    </div>
+
+    <div class="modal fade" id="ExemploModalCentralizado" tabindex="-1" role="dialog" aria-labelledby="TituloModalCentralizado" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="TituloModalCentralizado">Calculadora para Somar</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <div class="row">
+                      <div class="col">
+                        <input type="number" class="form-control" placeholder="1° Número" id="num1" required>
+                      </div>
+                      <div class="col">
+                        <input type="number" class="form-control" placeholder="2° Número" id="num2" required>
+                      </div>
+                    </div>
+                  </form>
+                    <div id="botaosomar">   
+                        <button type="button" class="btn" id="btnsomar" onclick="somar()">Somar</button>
+                    </div>
+
+                    <div id="resposta3">   
+                        <h1 id="text-resposta"></h1>
+                    </div>
+                  
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+
+
     <script src="script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
 </body>
+
 </html>

@@ -1,12 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap');
 
-body{
-    text-align: center;
+body {
+    text-align: center !important; 
     font-family: 'Montserrat', sans-serif;
     font-weight: 500;
     font-size: 20px;
     color: #be94e6;
     padding-top: 60PX;
+}
+
+.titulo{
+    color: #be94e6;
 }
 
 #turnOn{background-color: #E9E1FC;
@@ -30,7 +34,61 @@ color: #be94e6;}
     color: #be94e6;
 }
 
+#BuyNew{
+    background-color: #E9E1FC;
+    border: 1px solid #be94e6;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    color: #be94e6;
+    margin-top: 20px;
+}
+
+#quantlpm{
+    background-color: #E9E1FC;
+    border: 1px solid #be94e6;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    color: #be94e6;
+    margin-top: 20px;
+}
+
+#somar{
+    background-color: #E9E1FC;
+    border: 1px solid #be94e6;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    color: #be94e6;
+    margin-top: 20px;
+}
+
+.quantaslamp{
+    position: absolute;
+    top: 20px;
+    right: 30px;
+}
+
+.calculadora{
+    position: absolute;
+    top: 20px;
+    left: 30px;
+}
+
+
 #turnOn:hover{
+    background-color: #be94e6;
+    color: white;
+}
+
+#BuyNew:hover{
     background-color: #be94e6;
     color: white;
 }
@@ -38,4 +96,12 @@ color: #be94e6;}
 #turnOff:hover{
     background-color: #be94e6;
     color: white;
+}
+
+#num1{
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+#num2{
+    margin-top: 20px;
 }
